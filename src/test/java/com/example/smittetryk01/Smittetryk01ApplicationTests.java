@@ -24,7 +24,7 @@ class Smittetryk01ApplicationTests {
     @Test
     void testFail() {
         List<County> counties = countyRepository.findAll();
-        Assertions.assertEquals(2, counties.size());
+        Assertions.assertNotEquals(2, counties.size());
     }
 
 
