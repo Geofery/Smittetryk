@@ -18,6 +18,14 @@ class Smittetryk01ApplicationTests {
     @Test
     void testFunc() {
         List<County> counties = countyRepository.findAll();
+        Assertions.assertEquals(3, counties.size());
+    }
+
+    @Test
+    void testFail() {
+        List<County> counties = countyRepository.findAll();
         Assertions.assertEquals(2, counties.size());
     }
+
+
 }
